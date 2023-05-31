@@ -12,12 +12,16 @@ if ! [ -x "$(command -v git)" ]; then
 fi
 
 
-// safity first
+# safity first
+if [ -d ~/dotfiles.bak ]; then
+  echo "Found existing directory, delete old backup: ~/dotfiles.bak"
+  rm -r ~/dotfiles.bak
+fi
 if [ -d ~/dotfiles ]; then
   echo "Found existing directory, created backup: ~/dotfiles.bak"
   mv ~/dotfiles ~/dotfiles.bak
 fi
-  
+
 git clone https://github.com/Koala/dotfiles.git ~/dotfiles
 
 symlink() {
@@ -28,35 +32,35 @@ symlink() {
   ln -sf ~/dotfiles/$1 ~/$1;
 }
 
-//symlink .profile
-//symlink .bash_profile
-//symlink .bashrc
+#symlink .profile
+#symlink .bash_profile
+#symlink .bashrc
 
 symlink .bash_aliases
-//symlink .bash_prompt
-//symlink .inputrc
+#symlink .bash_prompt
+#symlink .inputrc
 
-//symlink .emacs
-//symlink .gitconfig
-//symlink .gitignore
-//symlink .gitcompletion.bash
-//symlink .kubecompletion.bash
-//symlink .curlrc
-//symlink .nvmrc
-//symlink .hyper.js
-//symlink .tmux.conf
-//symlink .XCompose
+#symlink .emacs
+#symlink .gitconfig
+#symlink .gitignore
+#symlink .gitcompletion.bash
+#symlink .kubecompletion.bash
+#symlink .curlrc
+#symlink .nvmrc
+#symlink .hyper.js
+#symlink .tmux.conf
+#symlink .XCompose
 
-//echo "Enter Git fullname:"
-//read GIT_FULLNAME
-//echo "Requesting root permissions to set git config at system level..."
-//sudo git config --system user.name $FULLNAME
-//echo "Success."
+#echo "Enter Git fullname:"
+#read GIT_FULLNAME
+#echo "Requesting root permissions to set git config at system level..."
+#sudo git config --system user.name $FULLNAME
+#echo "Success."
 
-//echo "Enter Git email address:"
-//read GIT_EMAIL
-//echo "Requesting root permissions to set git config at system level..."
-//sudo git config --system user.email $GIT_EMAIL
-//echo "Success."
+#echo "Enter Git email address:"
+#read GIT_EMAIL
+#echo "Requesting root permissions to set git config at system level..."
+#sudo git config --system user.email $GIT_EMAIL
+#echo "Success."
 
 exec $BASH
