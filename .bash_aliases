@@ -3,7 +3,19 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 else
   alias l="ls -cl -hp --time-style=long-iso --group-directories-first --color=always"
 fi
+
+
 alias ll="l -a"
+
+#alias ll='ls $LS_OPTIONS -l'
+alias la="l -A"
+alias laa="l -la"
+
+
+
+
+
+
 
 alias cd1="cd .."
 alias cd2="cd ../../"
@@ -20,8 +32,8 @@ alias tree='tree -I ".git|node_modules"'
 
 alias path='echo -e ${PATH//:/\\n}'
 
-alias k='kubectl'
-alias ks='echo -e "context: $(k config current-context)\nnamespace: $(k config view --minify --output jsonpath={..namespace})"'
-alias kc='f (){ export KUBECONFIG=~/.kube/"$@".yaml; unset -f f; }; f'
-alias kns='f(){ k config set-context --current --namespace="$@"; unset -f f; }; f'
-complete -F __start_kubectl k
+#alias k='kubectl'
+#alias ks='echo -e "context: $(k config current-context)\nnamespace: $(k config view --minify --output jsonpath={..namespace})"'
+#alias kc='f (){ export KUBECONFIG=~/.kube/"$@".yaml; unset -f f; }; f'
+#alias kns='f(){ k config set-context --current --namespace="$@"; unset -f f; }; f'
+#complete -F __start_kubectl k
