@@ -38,12 +38,12 @@ symlink .bashrc
 
 symlink .bash_aliases
 symlink .bash_prompt
-#symlink .inputrc
+symlink .inputrc
 
 #symlink .emacs
-#symlink .gitconfig
-#symlink .gitignore
-#symlink .gitcompletion.bash
+symlink .gitconfig
+symlink .gitignore
+symlink .gitcompletion.bash
 #symlink .kubecompletion.bash
 #symlink .curlrc
 #symlink .nvmrc
