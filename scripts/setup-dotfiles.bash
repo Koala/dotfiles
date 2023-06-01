@@ -32,12 +32,12 @@ symlink() {
   ln -sf ~/dotfiles/$1 ~/$1;
 }
 
-#symlink .profile
-#symlink .bash_profile
-#symlink .bashrc
+symlink .profile
+symlink .bash_profile
+symlink .bashrc
 
 symlink .bash_aliases
-#symlink .bash_prompt
+symlink .bash_prompt
 #symlink .inputrc
 
 #symlink .emacs
@@ -63,4 +63,4 @@ symlink .bash_aliases
 #sudo git config --system user.email $GIT_EMAIL
 #echo "Success."
 
-exec $BASH
+#exec $BASH
