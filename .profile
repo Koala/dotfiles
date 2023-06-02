@@ -29,13 +29,14 @@ if [ -d "$HOME/gems" ]; then
 fi
 
 
+### Aufruf der .bashrc erfolgt bereits in der .bash_profile - wird daher hier ignoriert
 # if running bash
-if [ -n "$BASH_VERSION" ]; then
+#if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
-fi
+#    if [ -f "$HOME/.bashrc" ]; then
+#	. "$HOME/.bashrc"
+#    fi
+#fi
 
 
 if [ -d "/home/linuxbrew" ]; then

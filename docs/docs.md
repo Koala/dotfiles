@@ -63,10 +63,6 @@ Globale Einstellungen zu `.gitignore`.
 ### .profile
 
 Wird einmalig beim Login aufgerufen.
-Hier wird ebenfalls die `.bashrc` aufgerufen.
-
-
-
 
 
 ## Dateiaufrufreihenfolge bei Login
