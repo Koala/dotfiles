@@ -11,6 +11,7 @@ Eine Übersicht der definierten Alias kann in der Konsole mit dem Befehl `alias`
 ### .bash_profile
 
 Diese Datei gibt es normalerweise nicht auf einem Debian-System. Aber wenn sie existiert, wird `.profile` ignoriert. Daher wird dies in dieser Datei aufgerufen und damit eine Kompatibilität zu anderen System gewahrt.
+`.bashrc` wird hier ebenfalls aufgerufen.
 
 
 ### .bash_prompt
@@ -61,6 +62,8 @@ Globale Einstellungen zu `.gitignore`.
 
 ### .profile
 
+Wird einmalig beim Login aufgerufen.
+Hier wird ebenfalls die `.bashrc` aufgerufen.
 
 
 
@@ -73,16 +76,8 @@ Globale Einstellungen zu `.gitignore`.
 .bashrc
 .bash_alias
 .bash_prompt
-.bashrc
-.bash_alias
-.bash_prompt
+.gitcompletion.bash
 ``` 
-
-Warum hier `.bashrc`, `.bash_alias` und `.bash_prompt` doppelt aufgerufen, ist mir (noch) nicht klar.
-
-
-
-
 
 
 ## Dateiaufrufreihenfolge bei Start einer Shell
@@ -90,6 +85,7 @@ Warum hier `.bashrc`, `.bash_alias` und `.bash_prompt` doppelt aufgerufen, ist m
 .bashrc
 .bash_alias
 .bash_prompt
+.gitcompletion.bash
 ``` 
 
 
