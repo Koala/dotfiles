@@ -20,6 +20,13 @@ Mit Hilfe der Sammlung dieser Dateien können auf allen Rechnern und für jeden 
 Einiges werde ich vom Original auskommentiert lassen, da der Nutzen teilweise (noch) nicht da ist.
 
 
+## :building_construction: Benötigte Programme
+- `git`
+- `apt-get` (falls `git` nicht installiert ist)
+- Optional: `icdiff`
+
+`icdiff` wird als diff-Programm für git verwendet. Es wird aber nicht automatisch installiert.
+
 
 
 ### :tada: Original von:
