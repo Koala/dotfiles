@@ -52,6 +52,7 @@ Alle Alias lassen sich mit `git alias` ausgeben.
 
 ### .gitignore
 
+Globale Einstellungen zu `.gitignore`. 
 
 
 ### .inputrc
