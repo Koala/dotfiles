@@ -4,18 +4,21 @@
 
 ### .bash_aliases
 
+Wird in der `.bashrc` aufgerufen.
 Hier werden Alias definiert.
 Eine Übersicht der definierten Alias kann in der Konsole mit dem Befehl `alias` aufgerufen werden.
 
 
 ### .bash_profile
 
-Diese Datei gibt es normalerweise nicht auf einem Debian-System. Aber wenn sie existiert, wird `.profile` ignoriert. Daher wird dies in dieser Datei aufgerufen und damit eine Kompatibilität zu anderen System gewahrt.
-`.bashrc` wird hier ebenfalls aufgerufen.
+Ruft beim Login auf:
+`.profile`
+`.bashrc`
 
 
 ### .bash_prompt
 
+Wird in der `.bashrc` aufgerufen.
 Das Aussehen des Prompt wir hier zusammengebaut.
 Hier gibt es auch etwas Git-Magie. Befindet sich der User in einem Verzeichnis mit einem Git-Repository, wird der Prompt in Abhängigkeit vom Repo angepasst.
 
@@ -35,12 +38,17 @@ Check for untracked files + Check for unstaged changes
 
 ### .bashrc
 
-Wird bei jedem Start einer Bash-Shell aufgerufen. 
-Hier werden `.bash_alias`, `.bash_prompt` und `.gitcompletion.bash` aufgerufen.
+Wird in der `.bash_profile` aufgerufen.
+Wird bei **jedem** Start einer Bash-Shell aufgerufen. 
+Ruft auf:
+`.bash_alias`
+`.bash_prompt`
+`.gitcompletion.bash`
 
 
 ### .gitcompletion.bash
 
+Wird in der `.bashrc` aufgerufen.
 Git-Magie! 
 
 
@@ -58,10 +66,14 @@ Globale Einstellungen zu `.gitignore`.
 
 ### .inputrc
 
+Wird vom System selbst beim Login bzw. beim Starten einer Shell interpretiert.
+Änderungen in dieser Datei werden nur durch Starten einer Shell neu interpretiert und gelten dann auch nur für diese Shell.
+In dieser Datei dürfen **KEINE** echo-Befehle stehen! *(leidvoller Selbsttest :see_no_evil:)*
 
 
 ### .profile
 
+Wird in der `.bash_profile` aufgerufen.
 Wird einmalig beim Login aufgerufen.
 
 
