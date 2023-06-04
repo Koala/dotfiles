@@ -1,16 +1,18 @@
-# koala / dotfiles
+# Dotfiles
 
-## :hammer_and_wrench: Install:
+## :hammer_and_wrench: Installation:
 
 ```
 curl -L https://ogy.de/koala-dotfiles -o setup-dotfiles.bash
 source setup-dotfiles.bash
 ```
+Im Home-Verzeichnis wird das Verzeichnis `dotfiles` angelegt. Existiert dieses bereits, wird ein Backup (`dotfiles.bak`) erstellt. Existiert auch das Backupverzeichnis, so wird dieses zuerst gelöscht (Achtung, es kann zu Meldungen für fehlende Schreibrechte im git-Verzeichnis kommen. Diese müssen mit "y" bestätigt werden.).
+
 
 ## :mag: Für wen?
 
-In erster Linie für Linux-Nutzer. Einige Kommandos und Einrichtungen stammen vom Originalautor und sind für Mac angepasst. Das kann ich aber derzeit (2023) nicht testen. Belasse es aber mit drin. Wer das auf einem Mac anwenden möchte, möge die Funktionen bitte selbstständig prüfen und für sich anpassen.
-
+In erster Linie für Linux-Nutzer und Bash-Jongleure die zum Beispiel `git` lieber über die Konsole benutzen, als mit einer IDE oder ähnlichem.  
+Einige Kommandos und Einrichtungen stammen vom Originalautor und sind für Mac angepasst. Das kann ich aber derzeit (2023) nicht testen. Belasse es aber mit drin. Wer das auf einem Mac anwenden möchte, möge die Funktionen bitte selbstständig prüfen und für sich anpassen.
 
 
 ## :raised_eyebrow: Was soll das?
@@ -20,7 +22,9 @@ Mit Hilfe der Sammlung dieser Dateien können auf allen Rechnern und für jeden 
 Einiges werde ich vom Original auskommentiert lassen, da der Nutzen teilweise (noch) nicht da ist.
 
 Bei https://dotfiles.github.io/ finden sich eine vielzahl an Seiten zum dem Thema selbst. Viel Spaß beim stöbern und ausprobieren.  
-Aber denk dran - immer erst ein Backup machen! :point_up:
+:point_up: Memo an mich selbst: Denk dran - immer erst ein Backup machen! :point_up:
+
+Bei der hier verwendeten Variante werden Links für die Dotfiles angelegt. Die Originaldateien verbleiben im Verzeichnis `~/dotfiles`. Andere kopieren die Dateien direkt nach `~/`. Das ist Geschmackssache ... oder gibt es etwas, dass gegen Links spricht?  
 
 
 
@@ -40,4 +44,11 @@ Ein bischen Dokumentation (mehr gegen das eigene Vergessen :monocle_face:): [doc
 
 ## :tada: Original / Inspiriert von:
 https://github.com/branneman/dotfiles
+
+
+## :wrench: ToDo
+
+- bessere Interaktion (Rückfragen) für die Bearbeitung der Dateien einbauen.
+- Originaldateien (Nicht-Dotfiles) vorher sichern (eigenes Verzeichnis? einfach nur umbenennen?)
+
 
