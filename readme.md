@@ -19,6 +19,10 @@ Mit Hilfe der Sammlung dieser Dateien können auf allen Rechnern und für jeden 
 
 Einiges werde ich vom Original auskommentiert lassen, da der Nutzen teilweise (noch) nicht da ist.
 
+Bei https://dotfiles.github.io/ finden sich eine vielzahl an Seiten zum dem Thema selbst. Viel Spaß beim stöbern und ausprobieren.  
+Aber denk dran - immer erst ein Backup machen! :point_up:
+
+
 
 ## :building_construction: Benötigte Programme
 - `git`
@@ -34,6 +38,6 @@ Ein bischen Dokumentation (mehr gegen das eigene Vergessen :monocle_face:): [doc
 
 
 
-### :tada: Original von:
+## :tada: Original / Inspiriert von:
 https://github.com/branneman/dotfiles
 
