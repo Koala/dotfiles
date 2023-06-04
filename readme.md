@@ -28,6 +28,11 @@ Einiges werde ich vom Original auskommentiert lassen, da der Nutzen teilweise (n
 `icdiff` wird als diff-Programm für git verwendet. Es wird aber nicht automatisch installiert.
 
 
+## :book: Dokumentation
+
+Ein bischen Dokumentation (mehr gegen das eigene Vergessen :monocle_face:): [docs](docs/docs.md)
+
+
 
 ### :tada: Original von:
 https://github.com/branneman/dotfiles
