@@ -38,7 +38,8 @@ Bei der hier verwendeten Variante werden Links für die Dotfiles angelegt. Die O
 
 ## :book: Dokumentation
 
-Ein bischen Dokumentation (mehr gegen das eigene Vergessen :monocle_face:): [docs](docs/docs.md)
+Ein bischen Dokumentation (mehr gegen das eigene Vergessen :monocle_face:): [docs](docs/docs.md)__
+Ein bischen Dokumentation die Zweite: [ChangeLog](docs/changelog.md)
 
 
 

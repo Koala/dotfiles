@@ -34,9 +34,9 @@ if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
 
-if [ -f ~/.gitcompletion.bash ]; then
-  source ~/.gitcompletion.bash
-fi
+#if [ -f ~/.gitcompletion.bash ]; then
+#  source ~/.gitcompletion.bash
+#fi
 
 #if [ -f .kubecompletion.bash ]; then
 #  source .kubecompletion.bash
