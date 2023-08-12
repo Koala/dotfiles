@@ -8,6 +8,12 @@ Wird in der `.bashrc` aufgerufen.
 Hier werden Alias definiert.  
 Eine Übersicht der definierten Alias kann in der Konsole mit dem Befehl `alias` aufgerufen werden.
 
+### .bash_aliases_only_actuall_user
+
+Wird in der `.bashrc` aufgerufen.  
+Dies ist nur eine leere Vorlage. Die Datei selbst wird nicht als Alias angelegt, sondern, wenn sie nicht existiert, nur in das Home-Verzeichnis kopiert.  
+Hier werden Alias definiert, die ausschließlich vom lokalen Benutzer verwendet werden (können). Das können zum Beispiel Alias zu Pfaden zu sensiblen Daten sein, auf die ausschließlich der aktuelle Benutzer Zugriff hat.  
+
 
 ### .bash_profile
 
@@ -49,8 +55,8 @@ Ruft auf:
 ### .gitcompletion.bash
 
 Wird in der `.bashrc` aufgerufen.  
-Git-Magie! 
-
+Git-Magie!  
+Beachte den Hinweis in der Changelog vom [06.08.2023]!  
 
 ### .gitconfig
 

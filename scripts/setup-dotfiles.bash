@@ -32,6 +32,14 @@ symlink() {
   ln -sf ~/dotfiles/$1 ~/$1;
 }
 
+baoau=.bash_aliases_only_actuall_user
+if [ ! -f ~/"$baoau" ]; then
+  echo "Copy file .bash_aliases_only_actuall_user to ~/$baoau"
+  cp "$baoau" ~/"$baoau"
+else
+  echo "File ~/$baoau still exists. Do nothing."
+fi
+
 symlink .profile
 symlink .bash_profile
 symlink .bashrc

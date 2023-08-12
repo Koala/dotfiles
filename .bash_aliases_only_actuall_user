@@ -1,0 +1,10 @@
+# Is included by the .bashrc
+# Includes aliases that are created and modified exclusively by the current user.
+# This alias file is only included as an empty template in the dotfiles project (GitHub).
+
+# example
+
+#ObsidianVault1=PathToMyVault
+#if [ -d "$ObsidianVault1" ]; then
+#  alias cdToObsidianVault="cd $ObsidianVault1"
+#fi

@@ -30,6 +30,12 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
+# Includes aliases that are created and modified exclusively by the current user.
+# This alias file is not recorded in the dotfiles project (GitHub).
+if [ -f ~/.bash_aliases_only_actuall_user ]; then
+  source ~/.bash_aliases_only_actuall_user
+fi
+
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
