@@ -11,7 +11,7 @@ Eine Übersicht der definierten Alias kann in der Konsole mit dem Befehl `alias`
 ### .bash_aliases_only_actuall_user
 
 Wird in der `.bashrc` aufgerufen.  
-Dies ist nur eine leere Vorlage. Die Datei selbst wird nicht als Alias angelegt, sondern, wenn sie nicht existiert, nur in das Home-Verzeichnis kopiert.  
+Dies ist nur eine leere Vorlage. Die Datei selbst wird nicht als Link angelegt, sondern, wenn sie nicht existiert, nur in das Home-Verzeichnis kopiert.  
 Hier werden Alias definiert, die ausschließlich vom lokalen Benutzer verwendet werden (können). Das können zum Beispiel Alias zu Pfaden zu sensiblen Daten sein, auf die ausschließlich der aktuelle Benutzer Zugriff hat.  
 
 
