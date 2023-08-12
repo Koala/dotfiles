@@ -21,7 +21,7 @@ Mit Hilfe der Sammlung dieser Dateien können auf allen Rechnern und für jeden 
 
 Einiges werde ich vom Original auskommentiert lassen, da der Nutzen teilweise (noch) nicht da ist.
 
-Bei https://dotfiles.github.io/ finden sich eine Vielzahl an Seiten zu dem Thema selbst. Viel Spaß beim Stöbern und ausprobieren.  
+Bei https://dotfiles.github.io/ finden sich eine Vielzahl an Seiten zu dem Thema selbst. Viel Spaß beim stöbern und ausprobieren.  
 :point_up: Memo an mich selbst: Denk dran - immer erst ein Backup machen! :point_up:
 
 Bei der hier verwendeten Variante werden Links für die Dotfiles angelegt. Die Originaldateien verbleiben im Verzeichnis `~/dotfiles`. Andere kopieren die Dateien direkt nach `~/`. Das ist Geschmackssache ... oder gibt es etwas, dass gegen Links spricht?  
